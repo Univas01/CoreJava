@@ -16,6 +16,8 @@ public class FunctionsInJava {
 		String g = ab.letter();
 		System.out.println("letter method returns:- "+g);
 		
+		abc();
+		
 	}
 
 	// void and return statements are contrary
@@ -30,5 +32,9 @@ public class FunctionsInJava {
 	public String letter(){
 		String t = "API";
 		return t;
+	}
+	
+	public static void abc(){
+		System.out.println("***"+"static method"+"***");
 	}
 }
