@@ -2,8 +2,13 @@ package basics;
 
 public class LoopConcept {
 
+	static int x, y;
+	
 	public static void main(String[] args) {
-
+		
+		LoopConcept loop = new LoopConcept();
+		loop.increamentalAndDecreamentalForLoop();
+		
 		//1. while loop
 		System.out.println("*****while loop*****");
 		int i = 1;
@@ -34,5 +39,18 @@ public class LoopConcept {
 		int z = ++y;
 		System.out.println(y);
 		System.out.println(z);
+	}
+	
+	public void increamentalAndDecreamentalForLoop(){
+		
+		for(y=0; y<10; y++){
+			System.out.println("Value of y " + y);
+		}
+		
+		System.out.println("***********************");
+		
+		for(x=10; x>0; x--){
+			System.out.println("Value of x " + x);
+		}
 	}
 }
