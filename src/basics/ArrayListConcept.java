@@ -60,9 +60,9 @@ public class ArrayListConcept {
 	public static void main(String[] args) {
 
 		ArrayListConcept ab = new ArrayListConcept();
-		ab.allDataTypes();
+		//ab.allDataTypes();
 		//ab.intDataType();
-		//ab.stringDataType();
+		ab.stringDataType();
 
 	}
 
