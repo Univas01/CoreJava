@@ -9,8 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import net.bytebuddy.utility.privilege.GetSystemPropertyAction;
-
 public class ReadPropFile {
 
 	WebDriver driver;
