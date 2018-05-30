@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4287" started-at="2018-05-29T16:15:08Z" finished-at="2018-05-29T16:15:13Z">
+  <suite name="Default suite" duration-ms="6526" started-at="2018-05-30T00:21:13Z" finished-at="2018-05-30T00:21:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4287" started-at="2018-05-29T16:15:08Z" finished-at="2018-05-29T16:15:13Z">
+    <test name="Default test" duration-ms="6526" started-at="2018-05-30T00:21:13Z" finished-at="2018-05-30T00:21:19Z">
       <class name="readingFiles.ReadPropFile">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@66a3ffec]" name="setUp" duration-ms="4227" started-at="2018-05-29T16:15:08Z" finished-at="2018-05-29T16:15:13Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@ae45eb6]" name="setUp" duration-ms="6499" started-at="2018-05-30T00:21:13Z" finished-at="2018-05-30T00:21:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
