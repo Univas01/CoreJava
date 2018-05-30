@@ -5,6 +5,7 @@
     <classes>
       <class name="readingFiles.ReadPropFile">
         <methods>
+          <include name="initialization"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- readingFiles.ReadPropFile -->
