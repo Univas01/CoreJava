@@ -5,6 +5,8 @@
     <classes>
       <class name="readingFiles.ReadPropFile">
         <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
           <include name="initialization"/>
           <include name="setUp"/>
         </methods>
