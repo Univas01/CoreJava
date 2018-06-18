@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="4523" started-at="2018-06-18T15:17:47Z" finished-at="2018-06-18T15:17:52Z">
     <groups>
     </groups>
@@ -32,6 +33,38 @@
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- rightmove.ReadPropFile -->
+=======
+  <suite name="Default suite" duration-ms="12722" started-at="2018-06-11T23:07:17Z" finished-at="2018-06-11T23:07:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12722" started-at="2018-06-11T23:07:17Z" finished-at="2018-06-11T23:07:30Z">
+      <class name="readingFiles.ReadPropFile">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@5c3bd550]" name="setUp" is-config="true" duration-ms="6" started-at="2018-06-11T23:07:17Z" finished-at="2018-06-11T23:07:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:readingFiles.ReadPropFile@5c3bd550]" name="initialization" duration-ms="4531" started-at="2018-06-11T23:07:17Z" finished-at="2018-06-11T23:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@5c3bd550]" name="setUp" is-config="true" duration-ms="1" started-at="2018-06-11T23:07:22Z" finished-at="2018-06-11T23:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:readingFiles.ReadPropFile@5c3bd550]" name="loginTest" duration-ms="8011" started-at="2018-06-11T23:07:22Z" depends-on-methods="readingFiles.ReadPropFile.initialization" finished-at="2018-06-11T23:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:readingFiles.ReadPropFile@5c3bd550]" name="tearDown" duration-ms="137" started-at="2018-06-11T23:07:30Z" depends-on-methods="readingFiles.ReadPropFile.loginTest" finished-at="2018-06-11T23:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@5c3bd550]" name="setUp" is-config="true" duration-ms="0" started-at="2018-06-11T23:07:30Z" finished-at="2018-06-11T23:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- readingFiles.ReadPropFile -->
+>>>>>>> 3eb6912aedce4017068b5aee337a2d9085455b5a
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
