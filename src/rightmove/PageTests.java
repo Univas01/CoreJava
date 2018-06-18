@@ -11,13 +11,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import webdriverwaitmethods.WaitMethods;
 
 public class PageTests {
 
 	public static WebDriver driver;
-	public static Properties prop;
+	public static Properties prop; 
 
 	@BeforeMethod
 	public static void setUp() {
@@ -60,12 +63,31 @@ public class PageTests {
 	WebElement forSale = driver.findElement(By.id("buy"));
 	WebElement toRent = driver.findElement(By.id("rent"));
 	
-	searchBox.sendKeys("SW9 OEQ");
-	forSale.click();
+	WaitMethods.sendKeys(driver, searchBox, 10, "SW9 0EQ");
+	WaitMethods.clickMethod(driver, forSale, 10);
 	
+	Select searchRadius = new Select(driver.findElement(By.id("radius")));
+	Select minPriceRange = new Select(driver.findElement(By.id("minPrice")));
+	Select maxPriceRange = new Select(driver.findElement(By.id("maxPrice")));
+	Select minBedrooms = new Select(driver.findElement(By.id("minBedrooms")));
+	Select maxBedrooms = new Select(driver.findElement(By.id("maxBedrooms")));
+	Select displayPropertyType = new Select(driver.findElement(By.id("displayPropertyType")));
+	Select addedToSite = new Select(driver.findElement(By.id("maxDaysSinceAdded")));
+	
+	WebElement findPropertiesButton = driver.findElement(By.id("submit"));
+	
+	searchRadius.selectByIndex(5);
+	minPriceRange.selectByIndex(8);
+	maxPriceRange.selectByIndex(10);
+	minBedrooms.selectByIndex(2);
+	maxBedrooms.selectByIndex(3);
+	displayPropertyType.selectByIndex(2);
+	addedToSite.selectByIndex(3);
+	
+	WaitMethods.clickMethod(driver, findPropertiesButton, 10);
 	}
 	
-	@Test(dependsOnMethods =  {"homePageTest"})
+	@Test(enabled = false, dependsOnMethods =  {"homePageTest"})
 	public void tearDown() {
 		driver.quit();
 	}
