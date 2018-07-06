@@ -68,11 +68,11 @@ public class ArrayConcept2 {
 				System.out.println("d: " + d + ", e: "+ e);
 			}
 		}
+			
+	}
+	public void stringArrayTest(){
 		
-		
-		
-		
-		
+		double[][] doubleTest = new double[3][5];
 		
 	}
 }

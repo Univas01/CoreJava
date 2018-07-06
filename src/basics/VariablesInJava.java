@@ -1,5 +1,10 @@
 package basics;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 public class VariablesInJava {
 	
 	/**
@@ -11,7 +16,7 @@ public class VariablesInJava {
 	 */
 	
 	int firstValue; 
-
+	WebDriver driver;
 
 	public static void main(String[ ] args){
 
@@ -42,5 +47,10 @@ public class VariablesInJava {
 			c = c - 2;
 		}
 	}
+		
+	 public void testTest(WebDriver driver, WebElement element, Long time){
+		 new WebDriverWait(driver, time).until(ExpectedConditions.elementToBeClickable(element));
+		 element.click();
+	 }
 
 }

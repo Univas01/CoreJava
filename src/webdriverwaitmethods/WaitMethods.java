@@ -15,5 +15,6 @@ public class WaitMethods {
 	public static void clickMethod(WebDriver driver, WebElement element, int timeout) {
 		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
+		
 	}
 }
