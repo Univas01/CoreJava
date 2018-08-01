@@ -3,12 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="projectSetUp.LunchProject">
         <methods>
           <include name="faqTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- projectSetUp.LunchProject -->
+=======
+      <class name="readingFiles.ReadPropFile">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="initialization"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- readingFiles.ReadPropFile -->
+>>>>>>> 7daea81d2557e0e8675b274d730d92ed2bd3a1b9
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
