@@ -7,7 +7,7 @@ public class ArrayListConcept {
 
 	public void allDataTypes(){
 
-		ArrayList a = new ArrayList();
+		ArrayList<String> a = new ArrayList<String>();
 		a.add("12");
 		a.add("Ola");
 		a.add("12.98");
@@ -28,9 +28,11 @@ public class ArrayListConcept {
 		for (int i = 0; i<a.size(); i++ ){
 			System.out.println(a.get(i));
 		}
+		
+		
 	}
 	
-	public void intDataType(){
+	public static void intDataType(){
 		ArrayList<Integer> b = new ArrayList<Integer>();
 		b.add(200);
 		b.add(950);
@@ -39,6 +41,7 @@ public class ArrayListConcept {
 		System.out.println("Second index has value of:- " + b.get(1));
 		//System.out.println("Second index has value of:- " + b.get(2)); // IndexOutOfBoundsException Error
 	}
+	
 
 	public void stringDataType(){
 		ArrayList<String> c = new ArrayList<String>();
@@ -61,8 +64,8 @@ public class ArrayListConcept {
 
 		ArrayListConcept ab = new ArrayListConcept();
 		//ab.allDataTypes();
-		//ab.intDataType();
-		ab.stringDataType();
+		intDataType();
+		//ab.stringDataType();
 
 	}
 

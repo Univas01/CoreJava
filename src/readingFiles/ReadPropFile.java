@@ -21,7 +21,8 @@ public class ReadPropFile {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static WebElement userName, password, submit, logout;
-
+	
+	
 	@BeforeMethod
 	public static void setUp() {
 		try {
@@ -50,10 +51,10 @@ public class ReadPropFile {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.get(prop.getProperty("URL"));
+		driver.get(prop.getProperty("urlFreeCRM"));
 	}
 
-	@Test(dependsOnMethods = {"initialization"})
+	@Test(dependsOnMethods = {"initializationConstructor"})
 	public void loginTest() {
 		userName = driver.findElement(By.xpath("//input[@name='username']"));
 		password = driver.findElement(By.xpath("//input[@name='password']"));
@@ -67,7 +68,9 @@ public class ReadPropFile {
 		int size = driver.findElements(By.name("iframe")).size();
 		System.out.println("iframe size is " + size);
 		logout = driver.findElement(By.xpath("//a[@href='https://www.freecrm.com/index.cfm?logout=1']"));
-		WaitMethods.clickMethod(driver, logout, 3);
+		//WaitMethods.clickMethod(driver, logout, 3);
+		WaitMethods.clickM(driver, 10, logout);
+		
 	}
 	
 	@Test(dependsOnMethods =  {"loginTest"})

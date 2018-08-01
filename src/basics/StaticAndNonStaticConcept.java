@@ -6,7 +6,7 @@ public class StaticAndNonStaticConcept {
 	// Create object reference in order to access non-static variables and methods.
 	// Access static variables and methods directly without creating an object reference.
 
-	String name = "Ola"; 									// non-static global variable
+	String name = "Ola"; 								// non-static global variable
 	static int age = 25;									// static global variable
 
 	public static void main(String[] args) {

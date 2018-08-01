@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="rightmove.PageTests">
+      <class name="projectSetUp.LunchProject">
         <methods>
-          <include name="setUp"/>
-          <include name="initialization"/>
-          <include name="homePageTest"/>
+          <include name="faqTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- rightmove.PageTests -->
+      </class> <!-- projectSetUp.LunchProject -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

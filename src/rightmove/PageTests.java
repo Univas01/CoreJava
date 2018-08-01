@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -56,7 +55,7 @@ public class PageTests {
 		
 	}
 
-	@Test(dependsOnMethods = {"initialization"})
+	@Test(dependsOnMethods = {"initializationConstructor"})
 	public void homePageTest() {
 		
 	WebElement searchBox = driver.findElement(By.name("searchLocation"));
