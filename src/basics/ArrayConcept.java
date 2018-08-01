@@ -1,8 +1,23 @@
 package basics;
 
 public class ArrayConcept {
+	
+	public void arrayTest(){
+		int a[] = {1,2,4,6,7};
+		int b[] = {2,3,4,5,7};
+		for(int i=0; i<a.length; i++){
+			for(int k=0; k<b.length; k++){
+				if(a[i]==b[k]){
+					System.out.println(a[i]);
+				}
+			}
+		}
+	}
 
 	public static void main(String[] args) {
+		
+		ArrayConcept one = new ArrayConcept();
+		one.arrayTest();
 
 		// STATIC ARRAY - When size of an array is fixed. e.g int[4] which means
 		// size of an array is 4

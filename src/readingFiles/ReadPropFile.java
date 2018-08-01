@@ -5,12 +5,16 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -45,6 +49,9 @@ public class ReadPropFile {
 		} else if (browserName.equalsIgnoreCase("FF")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/browsers/geckodriver");
 			driver = new FirefoxDriver();
+		} else if (browserName.equalsIgnoreCase("safari")) {
+			System.setProperty("webdriver.safari.driver", "/usr/bin/safaridriver");
+			driver = new SafariDriver();
 		}
 
 		driver.manage().window().maximize();
