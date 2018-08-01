@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testng-results skipped="0" failed="1" ignored="2" total="3" passed="0">
   <reporter-output>
   </reporter-output>
@@ -90,27 +91,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- projectSetUp.LunchProject -->
 =======
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+=======
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+>>>>>>> branch01
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5258" started-at="2018-07-05T18:03:30Z" finished-at="2018-07-05T18:03:35Z">
+  <suite name="Default suite" duration-ms="12242" started-at="2018-07-13T01:19:30Z" finished-at="2018-07-13T01:19:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5258" started-at="2018-07-05T18:03:30Z" finished-at="2018-07-05T18:03:35Z">
-      <class name="lunchBrowser.LunchBrowswerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:lunchBrowser.LunchBrowswerTest@6a4f787b]" name="setUp" is-config="true" duration-ms="4065" started-at="2018-07-05T18:03:30Z" finished-at="2018-07-05T18:03:34Z">
+    <test name="Default test" duration-ms="12242" started-at="2018-07-13T01:19:30Z" finished-at="2018-07-13T01:19:42Z">
+      <class name="readingFiles.ReadPropFile">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@604ed9f0]" name="setUp" is-config="true" duration-ms="12" started-at="2018-07-13T01:19:30Z" finished-at="2018-07-13T01:19:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:lunchBrowser.LunchBrowswerTest@6a4f787b]" name="initialization" duration-ms="1058" started-at="2018-07-05T18:03:34Z" finished-at="2018-07-05T18:03:35Z">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:readingFiles.ReadPropFile@604ed9f0]" name="initialization" duration-ms="4685" started-at="2018-07-13T01:19:30Z" finished-at="2018-07-13T01:19:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:lunchBrowser.LunchBrowswerTest@6a4f787b]" name="tearDown" is-config="true" duration-ms="99" started-at="2018-07-05T18:03:35Z" finished-at="2018-07-05T18:03:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@604ed9f0]" name="setUp" is-config="true" duration-ms="1" started-at="2018-07-13T01:19:35Z" finished-at="2018-07-13T01:19:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:readingFiles.ReadPropFile@604ed9f0]" name="loginTest" duration-ms="7347" started-at="2018-07-13T01:19:35Z" depends-on-methods="readingFiles.ReadPropFile.initialization" finished-at="2018-07-13T01:19:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:readingFiles.ReadPropFile@604ed9f0]" name="setUp" is-config="true" duration-ms="1" started-at="2018-07-13T01:19:42Z" finished-at="2018-07-13T01:19:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:readingFiles.ReadPropFile@604ed9f0]" name="tearDown" duration-ms="149" started-at="2018-07-13T01:19:42Z" depends-on-methods="readingFiles.ReadPropFile.loginTest" finished-at="2018-07-13T01:19:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+<<<<<<< HEAD
       </class> <!-- lunchBrowser.LunchBrowswerTest -->
 >>>>>>> 7daea81d2557e0e8675b274d730d92ed2bd3a1b9
+=======
+      </class> <!-- readingFiles.ReadPropFile -->
+>>>>>>> branch01
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
