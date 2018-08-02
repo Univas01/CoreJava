@@ -10,6 +10,8 @@ public class E08_ThisMethodCall {
      * (You should not use this form in practice.)
      ***********************************************/
 
+
+
     public void firstMethod(){
         secondMethod();
         this.secondMethod();
@@ -21,6 +23,7 @@ public class E08_ThisMethodCall {
     }
 
     public static void main(String[] args) {
+
         E08_ThisMethodCall one = new E08_ThisMethodCall();
         one.firstMethod();
     }
