@@ -4,7 +4,7 @@ public class ArrayConcept2 {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
+
 		// Object Array (Object is a Super Class)
 		Object ob[] = new Object[6];
 		ob[0] = "Ola";
@@ -20,7 +20,7 @@ public class ArrayConcept2 {
 		for (int m = 0; m < ob.length; m++) {
 			System.out.println(ob[m]);
 		}
-=======
+
 		int[] intArray = new int[5];
 		intArray[0] = 10;
 		intArray[1] = 20;
@@ -91,6 +91,6 @@ public class ArrayConcept2 {
 		
 		double[][] doubleTest = new double[3][5];
 		
->>>>>>> 7daea81d2557e0e8675b274d730d92ed2bd3a1b9
+
 	}
 }

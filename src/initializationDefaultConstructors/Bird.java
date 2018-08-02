@@ -7,11 +7,11 @@ public class Bird {
     }
 
     public Bird(int i){
-
+        System.out.println("int i");
     }
 
     public Bird(double d){
-
+        System.out.println("double d");
     }
 
     public static void main (String[] args){
