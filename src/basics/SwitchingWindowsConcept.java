@@ -4,16 +4,18 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class SwitchingWindowsConcept {
 
 	static WebDriver driver;
 	
 	public static void main(String args[]){
-		System.setProperty("webdriver.chrome.driver", "/Users/Olasunkanmi/Downloads/drivers/chromedriver_3");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/browsers/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -31,9 +33,14 @@ public class SwitchingWindowsConcept {
 		
 		driver.switchTo().window(childWindow);
 		System.out.println("Child Window Title"+driver.getTitle());
+		Assert.assertEquals(driver.getTitle(), "Wire - Help & Support");
 		
 		WebElement two = driver.findElement(By.xpath("//h2[contains(text(), 'The basics of Travelex Wire')]"));
 		System.out.println("Getting text from Child Window: "+two.getText());
+
+		WebElement searchTextBox = driver.findElement(By.xpath("//input[@name='q']"));
+		searchTextBox.sendKeys("travelex");
+		searchTextBox.sendKeys(Keys.ENTER);
 		
 		driver.close();
 		driver.switchTo().window(parentWindow);

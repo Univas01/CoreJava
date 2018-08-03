@@ -45,10 +45,10 @@ public class LunchProject {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/ola.ajala/Desktop/OwnProject/CoreJava/browsers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/browsers/chromedriver");
 			driver = new ChromeDriver();
 		} else {
-			System.setProperty("webdriver.gecko.driver", "/Users/ola.ajala/Desktop/OwnProject/CoreJava/browsers/geckodriver");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/browsers/geckodriver");
 			driver = new FirefoxDriver();
 		}
 
